@@ -4,7 +4,7 @@ import style from "./home.module.css"
 const Content = () => {
     return (
         <>
-            <div className={`mt-4 ${style.blur} text-light`}>
+            <div className={`mt-4 ${style.backgound} text-light`}>
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0, color: 'white' }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 40, width: 40, borderRadius: 20, margin: 8 }} />
@@ -33,7 +33,7 @@ const Content = () => {
                     <p className='text-secondary m-0'>Comments...</p>
                 </div>
             </div>
-            <div className={`mt-4 ${style.blur} text-light`}>
+            <div className={`mt-4 ${style.backgound} text-light`}>
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0, color: 'white' }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 40, width: 40, borderRadius: 20, margin: 8 }} />
@@ -62,7 +62,7 @@ const Content = () => {
                     <p className='text-secondary m-0'>Comments...</p>
                 </div>
             </div>
-            <div className={`mt-4 ${style.blur} text-light`}>
+            <div className={`mt-4 ${style.backgound} text-light`}>
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0, color: 'white' }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 40, width: 40, borderRadius: 20, margin: 8 }} />

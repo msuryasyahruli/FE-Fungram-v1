@@ -4,10 +4,9 @@
     height: auto;
     border-radius: 15px;
     background-color: #b7b7b755;
-    /* position: fixed; */
 }
 
-.blur{
+.backgound{
     width: 100%;
     border-radius: 15px;
     background-color: #b7b7b755;

@@ -1,0 +1,15 @@
+.backgound {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #b7b7b755;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  display: flex;
+  padding: 1rem;
+}
+
+.contentImg {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}

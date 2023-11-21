@@ -9,10 +9,9 @@ const Home = () => {
     <>
       <div className="container">
         <section className="row py-3">
-          <div className="col-2 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          {/* <div className="col-2 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <Navigate />
-          </div>
-          <div class="tab-content row col" id="v-pills-tabContent">
+          </div> */}
             <div className="col-8">
               <Story />
               <Content />
@@ -20,7 +19,8 @@ const Home = () => {
             <div className="col">
               <Message />
             </div>
-          </div>
+          {/* <div class="tab-content row col" id="v-pills-tabContent">
+          </div> */}
         </section>
       </div>
     </>

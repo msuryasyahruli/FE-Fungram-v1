@@ -9,9 +9,9 @@ const Router = () => {
         <Routes>
           <Route
             path="/"
-            element={<Navigate to="/home" replace="true"></Navigate>}
+            element={<Navigate to="/funtechgram.com" replace="true"></Navigate>}
           />
-          <Route path="/home" element={<Home />} />
+          <Route path="/funtechgram.com" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
