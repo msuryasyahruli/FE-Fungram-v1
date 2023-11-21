@@ -1,10 +1,10 @@
 .navigation{
     backdrop-filter: blur(10px);
-    width: 194px;
+    /* width: 194px; */
     height: auto;
     border-radius: 15px;
     background-color: #b7b7b755;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .blur{
@@ -20,5 +20,5 @@
     border-radius: 20px;
     border: 0;
     background-color: #ffffff53;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }

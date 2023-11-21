@@ -12,7 +12,7 @@ const Navigate = () => {
                     <button className={`${style.btn}`}><div className='d-flex align-items-center'><i className="bi bi-grid-1x2 p-2 h4"></i><h6>Explore</h6></div></button>
                     <button className={`${style.btn}`}><div className='d-flex align-items-center'><i className="bi bi-chat p-2 h4"></i><h6>Chat</h6></div></button>
                     <button className={`${style.btn}`}><div className='d-flex align-items-center'><i className="bi bi-plus-square p-2 h4"></i><h6>Post</h6></div></button>
-                    <button className={`${style.btn}`}><div className='d-flex align-items-center'><i className="bi bi-person-circle p-2 h4"></i><h6>Profile</h6></div></button>
+                    <button className={`${style.btn} mb-5`}><div className='d-flex align-items-center'><i className="bi bi-person-circle p-2 h4"></i><h6>Profile</h6></div></button>
                     <button className={`${style.btn} mt-5`}><div className='d-flex align-items-center'><i className="bi bi-gear p-2 h4"></i><h6>Setting</h6></div></button>
                 </div>
             </div>
