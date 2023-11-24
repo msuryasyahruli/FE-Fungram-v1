@@ -27,6 +27,12 @@ const Explore = () => {
                     <div className={style.contentImg}>
                         <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100 p-1'/>
                     </div>
+                    <div className={style.contentImg}>
+                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100 p-1'/>
+                    </div>
+                    <div className={style.contentImg}>
+                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100 p-1'/>
+                    </div>
                 </div>
             </div>
         </>

@@ -1,0 +1,25 @@
+.backgound {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #b7b7b755;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.contentImg {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.headProfile{
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 90px;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

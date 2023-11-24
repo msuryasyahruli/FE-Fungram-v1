@@ -3,6 +3,8 @@ import style from "./nav.module.css";
 import Home from "../home/Home";
 import Search from "../search/Search";
 import Explore from "../explore/Explore";
+import Post from "../post/Post";
+import Profile from "../profile/Profile";
 
 const Navigation = () => {
     return (
@@ -158,7 +160,7 @@ const Navigation = () => {
                             aria-labelledby="v-pills-Search-tab"
                             tabIndex={0}
                         >
-                            <Search/>
+                            <Search />
                         </div>
                         <div
                             className="tab-pane fade"
@@ -167,7 +169,7 @@ const Navigation = () => {
                             aria-labelledby="v-pills-Explore-tab"
                             tabIndex={0}
                         >
-                            <Explore/>
+                            <Explore />
                         </div>
                         <div
                             className="tab-pane fade"
@@ -185,7 +187,7 @@ const Navigation = () => {
                             aria-labelledby="v-pills-Create-tab"
                             tabIndex={0}
                         >
-                            <div className={`${style.blur}`}>Create</div>
+                            <Post />
                         </div>
                         <div
                             className="tab-pane fade"
@@ -194,7 +196,7 @@ const Navigation = () => {
                             aria-labelledby="v-pills-Profile-tab"
                             tabIndex={0}
                         >
-                            <div className={`${style.blur}`}>Profile</div>
+                            <Profile />
                         </div>
                         <div
                             className="tab-pane fade"
