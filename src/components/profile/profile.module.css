@@ -4,6 +4,8 @@
   background-color: #b7b7b755;
   backdrop-filter: blur(10px);
   color: white;
+  height: 96vh;
+  overflow-y: scroll;
 }
 
 .contentImg {

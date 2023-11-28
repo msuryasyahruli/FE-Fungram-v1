@@ -18,8 +18,8 @@ const Navigation = () => {
                 {"}"}
             </style>
             <div className="container">
-                <section className="row py-3 fixed-left">
-                    <div className="col-md-2">
+                <section className="row py-3">
+                    <div className="col-sm-2">
                         <div className={`${style.navigation} text-center`}>
                             <img
                                 src={require("../../assets/image/FuntechGramLogo.png")}
@@ -109,7 +109,7 @@ const Navigation = () => {
                                         </div>
                                     </button>
                                     <button
-                                        className={`button ${style.btn} mb-5`}
+                                        className={`button ${style.btn}`}
                                         id="v-pills-Profile-tab"
                                         data-bs-toggle="pill"
                                         data-bs-target="#v-pills-Profile"
@@ -124,7 +124,7 @@ const Navigation = () => {
                                         </div>
                                     </button>
                                     <button
-                                        className={`button ${style.btn} mt-5`}
+                                        className={`button ${style.setting} fixed-bottom m-2`}
                                         id="v-pills-Setting-tab"
                                         data-bs-toggle="pill"
                                         data-bs-target="#v-pills-Setting"
@@ -143,7 +143,7 @@ const Navigation = () => {
                         </div>
                     </div>
 
-                    <div className="col-md tab-content" id="v-pills-tabContent">
+                    <div className="col-sm tab-content" id="v-pills-tabContent">
                         <div
                             className="tab-pane fade show active"
                             id="v-pills-home"

@@ -38,7 +38,7 @@ const Message = () => {
                             <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} />
                             <div>
                                 <h6 className='m-0 text-start'>Vineas</h6>
-                                <p className='m-0 text-start' style={{ fontWeight: 300 }}>Halo gais</p>
+                                <p className='m-0 text-start' style={{ fontWeight: 300 }}s>Halo gais</p>
                             </div>
                         </div>
                     </button>
@@ -47,7 +47,7 @@ const Message = () => {
                             <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} />
                             <div>
                                 <h6 className='m-0 text-start'>Vineas</h6>
-                                <p className='m-0 text-start' style={{ fontWeight: 300 }}>Halo gais</p>
+                                <p className='m-0 text-start' style={{ fontWeight: 300 }}s>Halo gais</p>
                             </div>
                         </div>
                     </button>
@@ -56,7 +56,7 @@ const Message = () => {
                             <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} />
                             <div>
                                 <h6 className='m-0 text-start'>Vineas</h6>
-                                <p className='m-0 text-start' style={{ fontWeight: 300 }}>Halo gais</p>
+                                <p className='m-0 text-start' style={{ fontWeight: 300 }}s>Halo gais</p>
                             </div>
                         </div>
                     </button>
@@ -65,7 +65,7 @@ const Message = () => {
                             <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} />
                             <div>
                                 <h6 className='m-0 text-start'>Vineas</h6>
-                                <p className='m-0 text-start' style={{ fontWeight: 300 }}>Halo gais</p>
+                                <p className='m-0 text-start' style={{ fontWeight: 300 }}s>Halo gais</p>
                             </div>
                         </div>
                     </button>

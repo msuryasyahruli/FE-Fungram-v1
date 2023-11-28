@@ -6,7 +6,7 @@ import Message from './Message'
 const Home = () => {
     return (
         <>
-            <div className='row'>
+            <div className='row' style={{ overflowY: 'scroll', height: "96vh" }}>
                 <section className='col-md-8'>
                     <Story />
                     <Content />
