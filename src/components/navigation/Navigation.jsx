@@ -5,6 +5,8 @@ import Search from "../search/Search";
 import Explore from "../explore/Explore";
 import Post from "../post/Post";
 import Profile from "../profile/Profile";
+import Chat from "../chat/Chat";
+import Setting from "../setting/Setting";
 
 const Navigation = () => {
     return (
@@ -14,17 +16,17 @@ const Navigation = () => {
                 color: #fff; background-color: #A5A5A5;
                 {"}"}
                 .nav-pills .button {"{"}
-                background-color: #ffffff53; color: #333;
+                background-color: #fff; color: #777;
                 {"}"}
             </style>
             <div className="container">
-                <section className="row py-3">
-                    <div className="col-sm-2">
+                <section className="d-flex py-3">
+                    <div className="me-4" style={{ width: 200 }}>
                         <div className={`${style.navigation} text-center`}>
                             <img
-                                src={require("../../assets/image/FuntechGramLogo.png")}
+                                src={require("../../assets/image/FuntechGramLogoB.png")}
                                 alt="Logo"
-                                className="m-3"
+                                className="m-3 w-75"
                             />
                             <div className="p-2">
                                 <div
@@ -143,7 +145,7 @@ const Navigation = () => {
                         </div>
                     </div>
 
-                    <div className="col-sm tab-content" id="v-pills-tabContent">
+                    <div className="tab-content" id="v-pills-tabContent" style={{ width: 1000 }}>
                         <div
                             className="tab-pane fade show active"
                             id="v-pills-home"
@@ -178,7 +180,7 @@ const Navigation = () => {
                             aria-labelledby="v-pills-Chat-tab"
                             tabIndex={0}
                         >
-                            <div className={`${style.blur}`}>Chat</div>
+                            <Chat />
                         </div>
                         <div
                             className="tab-pane fade"
@@ -205,7 +207,7 @@ const Navigation = () => {
                             aria-labelledby="v-pills-Setting-tab"
                             tabIndex={0}
                         >
-                            <div className={`${style.blur}`}>Setting</div>
+                            <Setting />
                         </div>
                     </div>
                 </section>

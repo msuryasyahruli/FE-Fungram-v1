@@ -3,7 +3,6 @@
   border-radius: 15px;
   background-color: #b7b7b755;
   backdrop-filter: blur(10px);
-  color: white;
   height: 96vh;
   overflow-y: scroll;
 }
@@ -17,7 +16,7 @@
 .headProfile{
     display: flex;
     /* justify-content: center; */
-    padding-left: 90px;
+    margin-left: 90px;
 }
 
 .bio{

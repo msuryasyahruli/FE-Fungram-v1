@@ -11,7 +11,7 @@ const Profile = () => {
                     </div>
                     <div className={`${style.bio}`}>
                         <h5 className='m-0'>Nickname</h5>
-                        <div className='d-flex text-warning my-2'>
+                        <div className='d-flex my-2'>
                             <h5 className='pe-5 m-0'>Post</h5>
                             <h5 className='pe-5 m-0'>Followers</h5>
                             <h5 className='pe-5 m-0'>Following</h5>

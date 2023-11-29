@@ -5,7 +5,6 @@
   backdrop-filter: blur(10px);
   justify-content: center;
   display: flex;
-  padding: 1rem;
   max-height: 96vh;
   overflow-y: scroll;
 }
