@@ -6,12 +6,12 @@ import Message from './Message'
 const Home = () => {
     return (
         <>
-            <div className='row' style={{ overflowY: 'scroll', height: "96vh" }}>
+            <div className='d-flex' style={{ overflowY: 'scroll', height: "95vh" }}>
                 <section className='col-md-8'>
                     <Story />
                     <Content />
                 </section>
-                <section className='col-md'>
+                <section className='col-md-4 ps-4'>
                     <Message />
                 </section>
             </div>

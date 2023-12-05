@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from "./profile.module.css";
+import axios from 'axios';
 
 const Profile = () => {
+    const [user, setUser] = useState([])
+    console.log(user);
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:3000/user/N438YEj`)
+            .then((res) => {
+                setUser(res.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, []);
+
     return (
         <>
             <div className={`${style.backgound}`}>
@@ -10,15 +25,15 @@ const Profile = () => {
                         <img src={require("../../assets/image/profile.png")} alt="Profile Image" style={{ width: 130, height: 130, borderRadius: 65 }} />
                     </div>
                     <div className={`${style.bio}`}>
-                        <h5 className='m-0'>Nickname</h5>
+                        <h5 className='m-0'>@{user.nickname}</h5>
                         <div className='d-flex my-2'>
                             <h5 className='pe-5 m-0'>Post</h5>
                             <h5 className='pe-5 m-0'>Followers</h5>
                             <h5 className='pe-5 m-0'>Following</h5>
                         </div>
                         <div className='text-secondary'>
-                            <p className='m-0'>Name</p>
-                            <p className='m-0'>bio: hello</p>
+                            <p className='m-0'>{user.name}</p>
+                            <p className='m-0'>bio: {user.bio}</p>
                         </div>
                     </div>
                 </div>

@@ -20,8 +20,8 @@ const Navigation = () => {
                 {"}"}
             </style>
             <div className="container">
-                <section className="d-flex py-3">
-                    <div className="me-4" style={{ width: 200 }}>
+                <section className="d-flex vh-100 align-items-center">
+                    <div className="col-2 pe-4">
                         <div className={`${style.navigation} text-center`}>
                             <img
                                 src={require("../../assets/image/FuntechGramLogoB.png")}
@@ -145,7 +145,7 @@ const Navigation = () => {
                         </div>
                     </div>
 
-                    <div className="tab-content" id="v-pills-tabContent" style={{ width: 1000 }}>
+                    <div className="col-10 tab-content" id="v-pills-tabContent">
                         <div
                             className="tab-pane fade show active"
                             id="v-pills-home"

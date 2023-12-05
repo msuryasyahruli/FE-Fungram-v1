@@ -10,113 +10,48 @@ const Search = () => {
                     <div className={`${style.search} d-flex align-items-center`}>
                         <i className="bi bi-search p-3 h4 m-0" />
                         <input type="text" className='m-0 w-100' placeholder='Search' />
-                        <i class="bi bi-x-lg  btn"></i>
+                        <i class="bi bi-x-lg btn"></i>
                     </div>
                     <div><p className='my-2'>Recent</p></div>
                     <div className='d-flex my-2 align-items-center justify-content-between'>
                         <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
                             <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
                             <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
+                            <Link to={{}}><p>Follow</p></Link>
                         </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
+                        <i class="bi bi-x-lg btn"></i>
                     </div>
                     <div className='d-flex my-2 align-items-center justify-content-between'>
                         <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
                             <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
                             <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
+                            <Link to={{}}><p>Follow</p></Link>
                         </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
+                        <i class="bi bi-x-lg btn"></i>
                     </div>
                     <div className='d-flex my-2 align-items-center justify-content-between'>
                         <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
                             <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
                             <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
+                            <Link to={{}}><p>Follow</p></Link>
                         </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
+                        <i class="bi bi-x-lg btn"></i>
                     </div>
                     <div className='d-flex my-2 align-items-center justify-content-between'>
                         <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
                             <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
                             <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
+                            <Link to={{}}><p>Follow</p></Link>
                         </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
+                        <i class="bi bi-x-lg btn"></i>
                     </div>
                     <div className='d-flex my-2 align-items-center justify-content-between'>
                         <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
                             <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
                             <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
+                            <Link to={{}}><p>Follow</p></Link>
                         </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
-                    </div>
-                    <div className='d-flex my-2 align-items-center justify-content-between'>
-                        <button className='d-flex align-items-center bg-transparent border-0 p-0 text-start'>
-                            <img src={require('../../assets/image/profile.png')} alt="foto profile" className='my-2' style={{ width: 50, height: 50, borderRadius: 25 }} />
-                            <h6 className='m-2'>Nickname <br /><span style={{ fontSize: 14, color: 'grey', fontWeight: 400 }}>Name</span></h6>
-                        </button>
-                        <Link to={{}}><p className='m-0'>Follow</p></Link>
+                        <i class="bi bi-x-lg btn"></i>
                     </div>
                 </div>
             </div>

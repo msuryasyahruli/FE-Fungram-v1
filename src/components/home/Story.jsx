@@ -23,6 +23,7 @@ const Story = () => {
                     <SwiperSlide><img src={require("../../assets/image/profile.png")} alt="profilePic" style={{ width: 70, height: 70, borderRadius: 40, border: '5px solid blue', margin: 10 }} /></SwiperSlide>
                     <SwiperSlide><img src={require("../../assets/image/profile.png")} alt="profilePic" style={{ width: 70, height: 70, borderRadius: 40, border: '5px solid blue', margin: 10 }} /></SwiperSlide>
                     <SwiperSlide><img src={require("../../assets/image/profile.png")} alt="profilePic" style={{ width: 70, height: 70, borderRadius: 40, border: '5px solid blue', margin: 10 }} /></SwiperSlide>
+                    <SwiperSlide><img src={require("../../assets/image/profile.png")} alt="profilePic" style={{ width: 70, height: 70, borderRadius: 40, border: '5px solid blue', margin: 10 }} /></SwiperSlide>
                 </Swiper>
             </div>
         </>
