@@ -3,14 +3,16 @@ import style from "./profile.module.css";
 import axios from 'axios';
 
 const Profile = () => {
+    const userId = localStorage.getItem("userId");
+console.log(userId);
     const [user, setUser] = useState([])
     console.log(user);
 
     useEffect(() => {
         axios
-            .get(`http://localhost:3000/user/N438YEj`)
+            .get(`${process.env.REACT_APP_API_KEY}/user/${userId}`)
             .then((res) => {
-                setUser(res.data);
+                setUser(res.data); 
             })
             .catch((err) => {
                 console.log(err);

@@ -21,7 +21,7 @@ const Content = () => {
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 40, width: 40, borderRadius: 20, margin: 8 }} />
-                        <h6>Ananda TPP <span className='text-primary'><i class="bi bi-patch-check-fill"></i></span></h6>
+                        <h6>Ananda TPP <span className='text-primary'><i className="bi bi-patch-check-fill"></i></span></h6>
                     </button>
                     <button className='m-3 p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <i className="bi bi-three-dots h4"></i>
@@ -61,7 +61,7 @@ const Content = () => {
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 40, width: 40, borderRadius: 20, margin: 8 }} />
-                        <h6>Ananda TPP <span className='text-primary'><i class="bi bi-patch-check-fill"></i></span></h6>
+                        <h6>Ananda TPP <span className='text-primary'><i className="bi bi-patch-check-fill"></i></span></h6>
                     </button>
                     <button className='m-3 p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <i className="bi bi-three-dots h4"></i>
@@ -90,7 +90,7 @@ const Content = () => {
                 <div className='d-flex align-items-center justify-content-between'>
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 40, width: 40, borderRadius: 20, margin: 8 }} />
-                        <h6>Ananda TPP <span className='text-primary'><i class="bi bi-patch-check-fill"></i></span></h6>
+                        <h6>Ananda TPP <span className='text-primary'><i className="bi bi-patch-check-fill"></i></span></h6>
                     </button>
                     <button className='m-3 p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <i className="bi bi-three-dots h4"></i>
