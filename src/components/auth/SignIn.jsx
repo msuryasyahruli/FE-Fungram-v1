@@ -48,7 +48,7 @@ const SignIn = () => {
                     localStorage.setItem("token", res.data.data.token);
                     localStorage.setItem("userId", res.data.data.user_id);
                 }
-                console.log(res.data);
+                // console.log(res.data);
             })
             .catch((err) => {
                 Swal.fire({

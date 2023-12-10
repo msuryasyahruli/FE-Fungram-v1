@@ -7,21 +7,29 @@
   overflow-y: scroll;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid; */
+  width: 902px;
+  height: fit-content;
+  margin: 10px;
+}
+
 .contentImg {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    padding: 2px;
+  height: 300px;
+  width: 300px;
+  padding: 1px;
 }
 
-.headProfile{
-    display: flex;
-    /* justify-content: center; */
-    margin-left: 90px;
+.headProfile {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 90px;
 }
 
-.bio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const Profile = () => {
     const token = localStorage.getItem("token");
-    const [user, setUser] = useState([])
+    const [user, setUser] = useState("")
 
     useEffect(() => {
         axios
@@ -17,7 +17,22 @@ const Profile = () => {
             .catch((err) => {
                 console.log(err);
             });
-    }, [token]);
+    });
+
+    const userId = localStorage.getItem("userId")
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        axios
+            .get(`${process.env.REACT_APP_API_KEY}/post/user/${userId}`)
+            .then((res) => {
+                setPosts(res.data.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [userId])
 
     return (
         <>
@@ -27,11 +42,11 @@ const Profile = () => {
                         <img src={require("../../assets/image/profile.png")} alt="Profile Image" style={{ width: 130, height: 130, borderRadius: 65 }} />
                     </div>
                     <div className={`${style.bio}`}>
-                        <h5 className='m-0'>@{user.user_nickname} {user.verify === "true" ? (<span className='text-primary'><i className="bi bi-patch-check-fill"></i></span>) : ("")} </h5>
+                        <h5 className='m-0'>@{user.user_nickname} {user.verify === "true" ? (<i className="bi bi-patch-check-fill text-primary"></i>) : user.verify === "owner" ? (<i style={{ color: "#FFD700", fontSize: 18 }} className="bi bi-patch-check-fill"></i>) : ("")}  </h5>
                         <div className='d-flex my-2'>
-                            <h5 className='pe-5 m-0'>Post</h5>
-                            <h5 className='pe-5 m-0'>Followers</h5>
-                            <h5 className='pe-5 m-0'>Following</h5>
+                            <h5 className='pe-5 m-0'>{posts.length} Post</h5>
+                            <h5 className='pe-5 m-0'>0 Followers</h5>
+                            <h5 className='pe-5 m-0'>0 Following</h5>
                         </div>
                         <div className='text-secondary'>
                             <p className='m-0'>{user.user_fullname}</p>
@@ -40,24 +55,13 @@ const Profile = () => {
                     </div>
                 </div>
                 <hr />
-                <div className='d-flex flex-wrap justify-content-center pb-3'>
-                    <div className={style.contentImg}>
-                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100' />
-                    </div>
-                    <div className={style.contentImg}>
-                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100' />
-                    </div>
-                    <div className={style.contentImg}>
-                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100' />
-                    </div>
-                    <div className={style.contentImg}>
-                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100' />
-                    </div>
-                    <div className={style.contentImg}>
-                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100' />
-                    </div>
-                    <div className={style.contentImg}>
-                        <img src={require('../../assets/image/GyozaChicken.jpg')} alt="contentImg" className='w-100 h-100' />
+                <div className='d-flex justify-content-center mb-3'>
+                    <div className={`${style.content}`}>
+                        {posts.map((posts, index) => (
+                            <div key={index} className={style.contentImg}>
+                                <img src={posts.post_image} alt="contentImg" className='w-100 h-100 object-fit-cover' />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

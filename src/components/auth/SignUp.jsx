@@ -8,10 +8,10 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const [userData, setUserData] = useState({
-        user_email:"",
-        user_fullname:"",
-        user_nickname:"",
-        user_password:""
+        user_email: "",
+        user_fullname: "",
+        user_nickname: "",
+        user_password: ""
     });
 
     const userChange = (e) => {
@@ -19,21 +19,30 @@ const SignUp = () => {
             ...userData,
             [e.target.name]: e.target.value,
         });
-        console.log(userData);
+        // console.log(userData);
     };
 
     const userSubmit = (e) => {
         axios
             .post(`${process.env.REACT_APP_API_KEY}/users/register`, userData)
             .then((res) => {
-                Swal.fire("Success", "Register success", "success");
-                navigate("/login");
+                if (res.data.message === "User created") {
+                    Swal.fire("Success", "Register success", "success");
+                    navigate("/login");
+                } else {
+                    Swal.fire({
+                        title: "Error",
+                        text: res.data.message,
+                        icon: "info"
+                    });
+                }
+                // console.log(res.data);
             })
             .catch((err) => {
                 console.log(err);
             });
     };
-    
+
     return (
         <>
             <div className='d-flex justify-content-center align-items-center vh-100'>
@@ -49,9 +58,7 @@ const SignUp = () => {
                             <input type="password" placeholder='Password' name='user_password' id='user_password' onChange={userChange} />
                         </div>
                         <div className='text-center h6'>
-                            {/* <Link to={'/login'}> */}
-                                <button onClick={userSubmit} className={`${style.btn} h6 m-3 mb-4`}>Sign Up</button>
-                            {/* </Link> */}
+                            <button onClick={userSubmit} className={`${style.btn} h6 m-3 mb-4`}>Sign Up</button>
                             <p>Already have Funtechgram account? <span><Link to={'/login'} className='text-danger'>Sign In</Link></span></p>
                         </div>
                     </div>

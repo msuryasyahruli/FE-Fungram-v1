@@ -3,15 +3,23 @@
   border-radius: 15px;
   background-color: #b7b7b755;
   backdrop-filter: blur(10px);
-  justify-content: center;
-  display: flex;
-  max-height: 96vh;
+  height: 96vh;
   overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid; */
+  width: 902px;
+  height: fit-content;
+  margin: 10px;
 }
 
 .contentImg {
     height: 300px;
     width: 300px;
-    object-fit: cover;
-    padding: 2px;
+    padding: 1px;
 }

@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const Message = () => {
     const token = localStorage.getItem("token");
-    const [user, setUser] = useState([])
+    const [user, setUser] = useState("")
     // console.log(user);
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Message = () => {
             .catch((err) => {
                 console.log(err);
             });
-    }, [token]);
+    });
 
     return (
         <>
@@ -28,7 +28,7 @@ const Message = () => {
                     <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} />
                         <div>
-                            <h6 className='m-0 text-start'>{user.user_nickname} {user.verify === "true" ? (<span className='text-primary'><i className="bi bi-patch-check-fill"></i></span>) : ("")} </h6>
+                            <h6 className='m-0 text-start'>{user.user_nickname} {user.verify === "true" ? (<i className="bi bi-patch-check-fill text-primary"></i>) : user.verify === "owner" ? (<i style={{ color: "#FFD700", fontSize: 15 }} className="bi bi-patch-check-fill"></i>) : ("")} </h6>
                             <p className='m-0 text-start'>{user.user_fullname}</p>
                         </div>
                     </button>
@@ -40,7 +40,7 @@ const Message = () => {
                 <div>
                     <div className='d-flex justify-content-between'>
                         <p className='m-0'>Your message</p>
-                        <Link to={{  }} className='text-dark'>all</Link>
+                        <Link to={{}} className='text-dark'>all</Link>
                     </div>
                     <button className='d-flex align-items-center justify-content-between w-100 rounded p-0 mt-3' style={{ backgroundColor: 'transparent', border: 0 }}>
                         <div className='d-flex align-items-center'>
