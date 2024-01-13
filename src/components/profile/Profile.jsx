@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import style from "./profile.module.css";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import ModalPosts from '../modal/ModalPosts';
 
 const Profile = () => {
     const token = localStorage.getItem("token");
     const [user, setUser] = useState("")
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios
@@ -16,6 +19,10 @@ const Profile = () => {
             })
             .catch((err) => {
                 console.log(err);
+                if (err.response.data.message === "Token expired" || "Token invalid") {
+                    localStorage.clear();
+                    navigate("/login");
+                }
             });
     });
 
@@ -31,7 +38,7 @@ const Profile = () => {
             .catch((err) => {
                 console.log(err);
             });
-            // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [userId])
 
     return (
@@ -57,10 +64,13 @@ const Profile = () => {
                 <hr />
                 <div className='d-flex justify-content-center mb-3'>
                     <div className={`${style.content}`}>
+
                         {posts.map((posts, index) => (
-                            <div key={index} className={style.contentImg}>
-                                <img src={posts.post_image} alt="contentImg" className='w-100 h-100 object-fit-cover' />
-                            </div>
+                            <ModalPosts key={index} postId={posts.post_id} postImg={posts.post_image} name={user.user_nickname}>
+                                <div className={style.contentImg}>
+                                    <img src={posts.post_image} alt="contentImg" className='w-100 h-100 object-fit-cover' />
+                                </div>
+                            </ModalPosts>
                         ))}
                     </div>
                 </div>

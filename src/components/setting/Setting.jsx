@@ -39,7 +39,7 @@ const Setting = () => {
             ...user,
             [e.target.name]: e.target.value,
         });
-        console.log(user);
+        // console.log(user);
     };
 
     const handleSubmit = async (e) => {

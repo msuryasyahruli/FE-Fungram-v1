@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import style from "./home.module.css"
 import { Link } from 'react-router-dom'
 import axios from 'axios';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Message = () => {
     const token = localStorage.getItem("token");
     const [user, setUser] = useState("")
-    // console.log(user);
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         axios
@@ -15,6 +17,7 @@ const Message = () => {
             })
             .then((res) => {
                 setUser(res.data.data);
+                setIsLoading(false)
             })
             .catch((err) => {
                 console.log(err);
@@ -25,11 +28,11 @@ const Message = () => {
         <>
             <div className={`${style.backgound} p-3`}>
                 <div className='d-flex align-items-center justify-content-between'>
-                    <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0 }}>
-                        <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} />
+                    <button className='d-flex align-items-center p-0' style={{ backgroundColor: 'transparent', border: 0 }} >
+                        {!isLoading ? <img src={require("../../assets/image/profile.png")} alt="profile" style={{ height: 50, width: 50, borderRadius: 25, marginRight: 10 }} /> : <Skeleton circle={true} width={50} height={50} style={{ marginRight: 10 }} />}
                         <div>
-                            <h6 className='m-0 text-start'>{user.user_nickname} {user.verify === "true" ? (<i className="bi bi-patch-check-fill text-primary"></i>) : user.verify === "owner" ? (<i style={{ color: "#FFD700", fontSize: 15 }} className="bi bi-patch-check-fill"></i>) : ("")} </h6>
-                            <p className='m-0 text-start'>{user.user_fullname}</p>
+                            <h6 className='m-0 text-start'>{isLoading ? <Skeleton width={150} /> : user.user_nickname} {user.verify === "true" ? (<i className="bi bi-patch-check-fill text-primary"></i>) : user.verify === "owner" ? (<i style={{ color: "#FFD700", fontSize: 15 }} className="bi bi-patch-check-fill"></i>) : ("")} </h6>
+                            <p className='m-0 text-start'>{isLoading ? <Skeleton /> : user.user_fullname}</p>
                         </div>
                     </button>
                     <button className='p-0' style={{ backgroundColor: 'transparent', border: 0 }}>

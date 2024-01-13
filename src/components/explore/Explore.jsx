@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import style from './explore.module.css'
 import axios from 'axios'
+import ModalPosts from '../modal/ModalPosts'
 
 const Explore = () => {
     const [posts, setPosts] = useState([])
@@ -21,9 +22,11 @@ const Explore = () => {
             <div className={`${style.backgound}`}>
                 <div className={`${style.content}`}>
                     {posts.map((posts, index) => (
-                        <div key={index} className={style.contentImg}>
-                            <img src={posts.post_image} alt="contentImg" className='w-100 h-100 object-fit-cover' />
-                        </div>
+                        <ModalPosts key={index} postId={posts.post_id} postImg={posts.post_image} name={posts.user_nickname}>
+                            <div className={style.contentImg}>
+                                <img src={posts.post_image} alt="contentImg" className='w-100 h-100 object-fit-cover' />
+                            </div>
+                        </ModalPosts>
                     ))}
                 </div>
             </div>

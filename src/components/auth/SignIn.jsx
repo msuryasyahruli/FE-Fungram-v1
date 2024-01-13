@@ -44,6 +44,7 @@ const SignIn = () => {
                     });
                     setTimeout(function () {
                         navigate("/funtechgram.com");
+                        // window.location.reload();
                     }, 1000)
                     localStorage.setItem("token", res.data.data.token);
                     localStorage.setItem("userId", res.data.data.user_id);
